@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+<title>How to Perform Live Search and Filter on HTML Table using jQuery by CodexWorld</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="filter.js">
+
+</script>
+</head>
+<body>
+<div class="container">
+    <h2>List of games i like</h2>
+    <div class="form-group pull-right">
+        <input type="text" class="search form-control" placeholder="What you looking for?">
+    </div>
+    <table class="table table-striped" id="userTbl">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Date</th>
+		  <th>Price</th>
+		  <th>Software</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Warframe</td>
+          <td>Sci-fi</td>
+          <td>25 March,2013</td>
+		  <td>Free to Play</td>
+		  <td>Steam</td>
+        </tr>
+		<tr>
+		
+            <td>The Binding of Isaac: Rebirth</td>
+            <td>Rogue-Like</td>
+            <td>4 November,2014</td>
+			<td>14,99 USD</td>
+			<td>Steam</td>
+        </tr>
+        <tr>
+            <td>Enter the gungeon</td>
+            <td>Rogue-Like</td>
+            <td>5 April, 2016</td>
+			<td>14,99 USD</td>
+			<td>Steam</td>
+        </tr>
+        <tr>
+            <td>Borderlands 2</td>
+            <td>RPG</td>
+            <td>20 september,2012</td>
+			<td>19,99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>DARK SOULS III</td>
+            <td>Dark Fantasy</td>
+            <td>11 Apr, 2016</td>
+			<td>59.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Move or Die</td>
+            <td>Multiplayer/Funny</td>
+            <td>21 Jan, 2016</td>
+			<td>14.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Rocket League</td>
+            <td>Racing/Soccer/Football</td>
+            <td>7 Jul, 2015</td>
+			<td>19.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Fortnite</td>
+            <td>Survival</td>
+            <td>July 25, 2017</td> 
+			<td>39.99 EUR</td>
+			<td>Epic games</td>
+        </tr>
+		<tr>
+            <td>Dauntless</td>
+            <td>Action role-playing</td>
+            <td>August 18, 2017</td>
+			<td>39,99 USD</td>
+			<td>Unreal Engine</td>
+        </tr>
+		<tr>
+            <td>Metro: Last Light Redux</td>
+            <td>Post-Apocalyptic</td>
+            <td>27 Aug, 2014</td>
+			<td>19.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>The Witcher 3: Wild Hunt</td>
+            <td>Open world/RPG</td>
+            <td>18 May, 2015</td>
+			<td>39.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Path of Exile</td>
+            <td>Action RPG</td>
+            <td>23 Oct, 2013</td>
+			<td>Free to Play</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Killing Floor 2</td>
+            <td>Survival/FPS</td>
+            <td>18 Nov, 2016</td>
+			<td>29.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Atlas Reactor</td>
+            <td>Strategy/Turn-Based</td>
+            <td>4 Oct, 2016</td>
+			<td>Free to Play</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Battlerite</td>
+            <td>PvP/Competetive</td>
+            <td>20 Sep, 2016</td>
+			<td>19.99 USD, TBD Free to Play</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Dead by Daylight</td>
+            <td>Survival Horror</td>
+            <td>14 Jun, 2016</td>
+			<td>19.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Divinity: Original Sin - Enhanced Edition</td>
+            <td>RPG/Turn-Based/Strategy</td>
+            <td>27 Oct, 2015</td>
+			<td>39.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Furi</td>
+            <td>Difficult/Bullet Hell </td>
+            <td>5 Jul, 2016</td>
+			<td>19.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Rise of the Tomb Raider</td>
+            <td>Adventure/Action</td>
+            <td>9 Feb, 2016</td>
+			<td>59.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Shadow Warrior 2</td>
+            <td>FPS/Ninja</td>
+            <td>13 Oct, 2016</td>
+			<td>39.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Shadow Warrior 2</td>
+            <td>FPS/Ninja</td>
+            <td>13 Oct, 2016</td>
+			<td>39.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Watch_Dogs 2</td>
+            <td>Hacking/Parkour</td>
+            <td>28 Nov, 2016</td>
+			<td>59.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Grim Dawn</td>
+            <td>Action RPG/Co-op</td>
+            <td>25 Feb, 2016</td>
+			<td>24.99 USD</td>
+			<td>Steam</td>
+        </tr>
+		<tr>
+            <td>Tom Clancy's Rainbow Six Siege</td>
+            <td>Multiplayer/FPS/Tactical</td>
+            <td>1 Dec, 2015</td>
+			<td>14.99 USD</td>
+			<td>Ubisoft</td>
+        </tr>
+		<tr>
+            <td>Hand of Fate</td>
+            <td>Card game/RPG/Rogue-Like</td>
+            <td>17 Feb, 2015</td>
+			<td>19.99 USD</td>
+			<td>Steam</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
